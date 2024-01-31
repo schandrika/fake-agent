@@ -24,7 +24,7 @@ priority = "explicit"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-fake-lib = {version = "*", source = "test-pypi"}
+volttrn-lib-base-historian = {allows-prereleases=true}
 
 [tool.yapfignore]
 ignore_patterns = [
