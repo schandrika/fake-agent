@@ -24,7 +24,7 @@ priority = "supplemental"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-fake-lib = {version="*", allow-prereleases=true}
+fake-lib = {version="*", allow-prereleases = true}
 
 [tool.yapfignore]
 ignore_patterns = [
