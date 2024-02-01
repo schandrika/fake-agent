@@ -20,7 +20,7 @@ classifiers = [
 [[tool.poetry.source]]
 name = "test-pypi"
 url = "https://test.pypi.org/simple/"
-priority = "supplimental"
+priority = "supplemental"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
