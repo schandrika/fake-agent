@@ -2,7 +2,7 @@ name: Test with latest volttron
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/45 * * * *'
 
 defaults:
   run:
