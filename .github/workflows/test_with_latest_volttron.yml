@@ -13,4 +13,4 @@ env:
 jobs:
   test-with-latest-volttron:
     #uses: eclipse-volttron/github-tooling/.github/workflows/deploy-release.yml@main
-    uses: schandrika/github-tooling/.github/workflows/test_with_latest_volttron.yml
+    uses: schandrika/github-tooling/.github/workflows/test_with_latest_volttron.yml@test_with_latest
