@@ -1,4 +1,4 @@
-name: Run Pytests
+name: Test with latest volttron
 
 on:
   schedule:
