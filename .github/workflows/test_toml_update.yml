@@ -1,4 +1,4 @@
-ame: Test toml update
+name: Test toml update
 
 on:
   workflow_dispatch:
@@ -11,6 +11,7 @@ env:
 
 jobs:
   update-toml:
+    runs-on: ubuntu-22.04
     steps:
       - name: update toml file
         uses: schandrika/use-stable-volttron-releases@main
