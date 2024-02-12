@@ -12,4 +12,4 @@ env:
 jobs:
   update-toml:
     #uses: eclipse-volttron/github-tooling/.github/workflows/deploy-release.yml@main
-    uses: schandrika/use-stable-volttron-release@main
+    uses: schandrika/use-stable-volttron-releases@main
