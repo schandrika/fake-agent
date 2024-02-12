@@ -1,0 +1,15 @@
+ame: Test toml update
+
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+env:
+  PROJECT_NAME: fake-agent
+
+jobs:
+  update-toml:
+    #uses: eclipse-volttron/github-tooling/.github/workflows/deploy-release.yml@main
+    uses: schandrika/use-stable-volttron-release
