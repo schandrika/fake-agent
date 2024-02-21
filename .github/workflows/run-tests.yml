@@ -27,4 +27,4 @@ env:
 
 jobs:
   test-with-latest-volttron:
-    uses: schandrika/github-tooling/.github/workflows/run-tests@periodic_test
+    uses: schandrika/github-tooling/.github/workflows/run-tests.yml@periodic_test
