@@ -16,3 +16,5 @@ jobs:
       - name: update toml file
         #uses: schandrika/update_volttron_releases@main
         uses: schandrika/use-stable-volttron-releases@main
+        with:
+          token: ${{ secrets.MY_PAT }}
