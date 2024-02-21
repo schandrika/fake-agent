@@ -1,8 +1,7 @@
-name: Test with latest volttron
-
+name: Periodic tests
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '*/15 * * * *'
 
 defaults:
   run:
@@ -11,6 +10,6 @@ env:
   PROJECT_NAME: fake-agent
 
 jobs:
-  test-with-latest-volttron:
+  run-tests:
     #uses: eclipse-volttron/github-tooling/.github/workflows/deploy-release.yml@main
-    uses: schandrika/github-tooling/.github/workflows/test_with_latest_volttron.yml@test_with_latest
+    uses: schandrika/github-tooling/.github/workflows/run-tests.yml@periodic_test
