@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: update toml file
-        uses: schandrika/use-stable-volttron-releases@main
+        uses: schandrika/update_volttron_releases@main
