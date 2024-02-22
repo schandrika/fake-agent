@@ -1,0 +1,24 @@
+name: Test dispatch
+
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+env:
+  PROJECT_NAME: fake-agent
+
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        repo: [fake-lib,  fake-volttron]
+    steps:
+      - name: Invoke run-tests on core repos
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: run-tests.yaml
+          repo: ${{ matrix.repo }}
