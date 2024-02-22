@@ -20,5 +20,5 @@ jobs:
       - name: Invoke run-tests on core repos
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: run-tests.yaml
+          workflow: run-tests.yml
           repo: schandrika/${{ matrix.repo }}
