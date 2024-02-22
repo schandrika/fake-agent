@@ -15,7 +15,9 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        repo: [fake-lib,  fake-volttron]
+        repo:
+          - fake-lib
+          - fake-volttron
     steps:
       - name: Invoke run-tests on core repos
         uses: benc-uk/workflow-dispatch@v1
