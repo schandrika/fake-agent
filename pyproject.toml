@@ -1,39 +1,30 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
 name = "fake-agent"
 version = "0.1.0a0"
 description = "fake volttron library for testing github tool"
-authors = ["VOLTTRON Team <volttron@pnnl.gov>"]
+authors = [ "VOLTTRON Team <volttron@pnnl.gov>",]
 license = "Apache License 2.0"
 readme = "README.md"
 repository = "https://github.com/schandrika/fake-agent"
 homepage = "https://github.com/schandrika/fake-agent"
 keywords = []
-packages = [ { include = "dummy", from = "src" } ]
-classifiers = [
-    "Programming Language :: Python :: 3 :: Only",
-    "Intended Audience :: Science/Research",
-    "Intended Audience :: Information Technology",
-    "Intended Audience :: Developers",
-    "Intended Audience :: Other Audience",
-    "License :: OSI Approved :: Apache Software License"
-]
+classifiers = [ "Programming Language :: Python :: 3 :: Only", "Intended Audience :: Science/Research", "Intended Audience :: Information Technology", "Intended Audience :: Developers", "Intended Audience :: Other Audience", "License :: OSI Approved :: Apache Software License",]
+[[tool.poetry.packages]]
+include = "dummy"
+from = "src"
+
 [[tool.poetry.source]]
 name = "test-pypi"
 url = "https://test.pypi.org/simple/"
 priority = "supplemental"
 
+[tool.yapfignore]
+ignore_patterns = [ ".venv/**", ".pytest_cache/**", "dist/**", "docs/**",]
+
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-volttron-lib = {version=">0.1.0rc0", allow-prereleases = true}
-
-[tool.yapfignore]
-ignore_patterns = [
-    ".venv/**",
-    ".pytest_cache/**",
-    "dist/**",
-    "docs/**"
-]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+volttron-lib = ">0.1.0rc0"
