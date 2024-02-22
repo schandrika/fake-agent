@@ -12,5 +12,4 @@ env:
 jobs:
   run-tests:
     #uses: eclipse-volttron/github-tooling/.github/workflows/deploy-release.yml@main
-    if: ${{ github.ref == 'refs/heads/develop' }}
     uses: schandrika/github-tooling/.github/workflows/run-tests.yml@periodic_test
