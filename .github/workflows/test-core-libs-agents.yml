@@ -21,4 +21,4 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: run-tests.yaml
-          repo: ${{ matrix.repo }}
+          repo: schandrika/${{ matrix.repo }}
